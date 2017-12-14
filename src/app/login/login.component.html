@@ -1,0 +1,27 @@
+<form [formGroup]="formModel" (ngSubmit)="onLogin()" novalidate>
+  <div class="mycenter">
+    <div class="mysign">
+      <div class="col-lg-11 text-center text-info">
+        <h2>请登录</h2>
+      </div>
+      <div class="col-lg-10" style="margin-top: 40px"></div>
+      <div class="col-lg-10">
+        <input type="text"  formControlName="UserID"  id="UserID" class="form-control" placeholder="请输入账户名" required autofocus/>
+        <button type="button" class="btn btn-link">注册帐号</button>
+      </div>
+      <div class="col-lg-10" style="margin-top: 40px"></div>
+      <div class="col-lg-10">
+        <input type="password" formControlName="LogonPass"  id="LogonPass" class="form-control" placeholder="请输入密码" required autofocus/>
+        <button type="button" class="btn btn-link">找回密码</button>
+
+      </div>
+<span *ngFor="let item of CallBack " > {{item.code}}</span>
+
+      <div class="col-lg-10">
+        <button type="button" class="btn btn-success col-lg-12"  (click)="onLogin();">登录</button>
+
+
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,54 @@
+<div class="mycenter">
+  <div class="mysign">
+    <div class="item active">
+      <img class="slide-img" src="http://onvcb3rbt.bkt.clouddn.com/bannerTop.png">
+    </div>
+    <span *ngIf="title"></span>
+    <div class="item active" style="position: absolute; left: 30px;top: 65px;">
+      <img class="img-circle" style="display: block;height: auto; max-width: 30%;"
+           src="{{userInfo?.avatar}}" alt="头像"/>
+      <a class='btn  btn-default '
+         style="color: darkgrey;font-family:'微软雅黑';float:right;margin-top: -30px;margin-right:20px"
+         [routerLink]="['/information']">账号资料</a>
+    </div>
+    <div class="item active" style="margin-top: 70px;">
+      <span class="lead" style="font-size:20px;margin-left:15px;margin-right:5px;">{{userInfo?.nickname}}</span>
+      <img style="width:23px;height:23px" src="http://onvcb3rbt.bkt.clouddn.com/%E5%A5%B3.png">
+
+    </div>
+    <div class="item active" style="margin-top: 10px;">
+      <span class="lead" style="font-size:13px;margin-left:15px;margin-right:5px;">关注 0人</span>
+      <span class="lead" style="font-size:13px;margin-left:15px;margin-right:5px;">粉丝 0人</span>
+    </div>
+    <div class="item active" style="margin-top: 50px;">
+      <ul id="myTab" class="nav nav-tabs">
+
+        <li class="active"><a href="#history" data-toggle="tab" aria-expanded="true">历史记录</a></li>
+        <li><a href="#project" data-toggle="tab">我的投稿</a></li>
+
+      </ul>
+      <div id="myTabContent" class="tab-content">
+
+        <div class="tab-pane fade in active" id="history" style="margin-top: 10px;">
+
+          <a class="item active" [routerLink]="['/login']">
+
+            <img style="display: block;height: auto; max-width: 40%; margin-right:50px;float:left" class="img-rounded"
+                 src="http://onvcb3rbt.bkt.clouddn.com/%7DC@V%25RL_XJIM%609RMH@_%7DSH2.png">
+
+            <p>【10月】Just Because！ 08【独家正版】</p>
+            <p style="margin-top: 40px;font-size:12px;">今天 4:21</p>
+
+          </a>
+
+        </div>
+        <div class="tab-pane fade" id="project">
+          <img class="slide-img" style="height: 240px" src="http://onvcb3rbt.bkt.clouddn.com/noContent.png">
+          <p class="lead" style="text-align:center;color: darkgrey;  font-family:'微软雅黑';font-weight:bold;">你还没有投过稿</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+

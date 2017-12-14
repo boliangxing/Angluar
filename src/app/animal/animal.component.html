@@ -1,0 +1,24 @@
+<div id="animal-navbar"style="margin-top: 10px">
+  <p style="float:left;font-size: 16px;">连载番剧</p>
+  <p style="float:right;font-size: 16px;color:silver">查看更多 ></p>
+
+
+</div>
+
+<div  *ngFor="let animal of animalList ">
+<div style="clear: both"></div>
+<div style="margin-top: 20px">
+
+  <a class="item active" [routerLink]="['/animalDetail',animal.id]">
+
+    <img style="display: block;height: auto; max-width: 40%; margin-right:50px;float:left" class="img-rounded"
+         src="http://onvcb3rbt.bkt.clouddn.com/%7DC@V%25RL_XJIM%609RMH@_%7DSH2.png">
+
+    <p>{{animal.animal_title}}</p>
+    <p style="margin-top: 40px;font-size:12px;">{{animal.animal_authour}}</p>
+
+  </a>
+
+</div>
+<div style="clear: both"></div>
+</div>
